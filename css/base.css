@@ -1,0 +1,76 @@
+body {
+  font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial, "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN", "游ゴシック","Yu Gothic", "メイリオ","Meiryo", sans-serif;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333333;
+  font-weight: 100;
+  margin:5px 0px 10px 0px;
+}
+
+.logo {
+  font-family: 'Tangerine', cursive;
+  color: white;
+  font-size: 5em;
+  padding-bottom: 80px;
+  padding-left: 25px;
+}
+
+core-toolbar {
+  color: #666;
+  fill: #666;
+  background-color: transparent;
+}
+
+core-toolbar a {
+  color: #666;
+  text-decoration: none;
+}
+
+core-toolbar ul li {
+  display: inline-block;
+}
+
+core-toolbar ul a {
+  padding: 20px 10px;
+}
+
+core-toolbar a.selected {
+  background-color: #666;
+  /*background-color: #C8161A;*/
+  color: #fff;
+}
+
+@media only screen and (min-width: 900px) {
+  #main_container {
+    width: 840px;
+  }
+}
+
+.item_container {
+  margin-top: 40px;
+  line-height: 1.7em;
+}
+
+.item_container div {
+  color: #666;
+}
+
+.item_container li {
+  color: #666;
+}
+
+#main_container li {
+  padding-top: 10px;
+}
+
+#main_container a {
+  color: #1F8A99;
+}
+
+
+
+

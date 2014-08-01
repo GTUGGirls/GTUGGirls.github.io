@@ -1,0 +1,24 @@
+<link rel="import" href="../core-icon/core-icon.html">
+
+<polymer-element name="open-new-window" attributes="href label">
+  <template>
+    <style>
+    a {
+      color: #0277bd;
+      text-decoration: none;
+    }
+    </style>
+
+    <p>
+      <a href="{{href}}" target="new">
+        {{label}}
+        <core-icon icon="launch"></core-icon>
+      </a>
+    </p>
+
+  </template>
+  <script>
+    Polymer({
+    });
+  </script>
+</polymer-element>

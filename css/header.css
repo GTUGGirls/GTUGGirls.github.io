@@ -1,0 +1,7 @@
+core-scroll-header-panel::shadow #headerBg {
+  background: #fff;
+}
+
+core-scroll-header-panel::shadow #condensedHeaderBg {
+  background-color: #fff;
+}

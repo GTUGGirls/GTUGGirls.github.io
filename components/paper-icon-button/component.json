@@ -1,0 +1,8 @@
+{
+  "name": "paper-icon-button",
+  "version": "0.3.4",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Polymer/paper-icon-button.git"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "core-scroll-header-panel",
+  "version": "0.3.4",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Polymer/core-scroll-header-panel.git"
+  }
+}

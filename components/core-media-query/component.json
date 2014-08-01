@@ -1,0 +1,8 @@
+{
+  "name": "core-media-query",
+  "version": "0.3.4",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Polymer/core-media-query.git"
+  }
+}
