@@ -11,14 +11,6 @@ h1 {
   margin:5px 0px 10px 0px;
 }
 
-.logo {
-  font-family: 'Tangerine', cursive;
-  color: white;
-  font-size: 5em;
-  padding-bottom: 80px;
-  padding-left: 25px;
-}
-
 core-toolbar {
   color: #666;
   fill: #666;
