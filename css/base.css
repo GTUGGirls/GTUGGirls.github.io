@@ -15,6 +15,14 @@ core-toolbar {
   color: #666;
   fill: #666;
   background-color: transparent;
+  height: 280px;
+}
+
+#logo {
+  width: 280px;
+  height: 160px;
+  margin-bottom: 120px;
+  background-image: url('../img/gtug-girls-small.png');
 }
 
 core-toolbar a {
@@ -32,13 +40,35 @@ core-toolbar ul a {
 
 core-toolbar a.selected {
   background-color: #666;
-  /*background-color: #C8161A;*/
   color: #fff;
+}
+
+#main_container {
+  width: 100%;
+}
+
+#content {
+  padding: 20px;
 }
 
 @media only screen and (min-width: 900px) {
   #main_container {
     width: 840px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #content {
+    padding: 40px;
+  }
+  core-toolbar {
+    height: 400px;
+  }
+  #logo {
+    width: 555px;
+    height: 308px;
+    margin-bottom: 300px;
+    background-image: url('../img/gtug-girls.png');
   }
 }
 
@@ -62,7 +92,3 @@ core-toolbar a.selected {
 #main_container a {
   color: #1F8A99;
 }
-
-
-
-

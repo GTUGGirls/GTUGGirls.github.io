@@ -31,8 +31,12 @@
   <core-scroll-header-panel flex condenses>
 
     <!-- header -->
-    <core-toolbar style="height:400px;">
-      <a href="index.html" class="bottom" style="margin-bottom:300px;"><img src="img/gtug-girls.png"></a>
+    <core-toolbar>
+      <div id="logo" class="bottom">
+        <a href="index.html">
+          <div style="display:block;width:100%; height:100%;"></div>
+        </a>
+      </div>
       <span flex></span>
       <ul>
         <li><a href="#" class="selected">Meetup Log</a></li>
@@ -41,7 +45,7 @@
     </core-toolbar>
 
     <!-- contents -->
-    <div content style="padding: 40px;" layout vertical center>
+    <div content layout vertical center id="content">
 
       <div id="main_container">
 
