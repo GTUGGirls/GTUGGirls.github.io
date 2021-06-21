@@ -6,9 +6,9 @@
   <title>GTUG Girls</title>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
   <script src="components/platform/platform.js"></script>
-  <link href="//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
-
-  <style shim-shadowdom="">
+  </head>
+<body unresolved="" fullbleed="" layout="" vertical=""><div hidden="" by-polymer-bundler=""><link href="//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
+<style shim-shadowdom="">
 /*******************************
           Flex Layout
 *******************************/
@@ -277,219 +277,11 @@ html /deep/ [segment], html /deep/ segment {
   border-radius: 5px 5px 5px 5px;
 }
 
-</style>
-
-<script src="components/polymer/polymer.js"></script>
-<!--<link rel="import" href="../polymer-dev/polymer.html">--> 
-
-
-  
-
-
-
-
-
-<style shim-shadowdom="">/* Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt */
-
-html /deep/ core-icon {
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  fill: currentcolor;
-}
-
-html /deep/ core-icon[size=""] {
-  position: relative;
-}
-
-html /deep/ core-icon[size=""] > svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<!-- import core-icon for convenience 
-  TODO(sorvell): we'd rather do this in core-iconset but we can't until
-  crbug.com/373461 is addressed
--->
-
-
-
-
-  
-  
-
-
-  
-
-
-  
-
-
-  <!-- css -->
-  <link rel="stylesheet" href="css/header.css" shim-shadowdom="">
-  <link rel="stylesheet" href="css/base.css">
-</head>
-<body unresolved="" fullbleed="" layout="" vertical=""><div hidden="">
-<polymer-element name="core-toolbar" assetpath="components/core-toolbar/">
+</style><script src="components/polymer/polymer.js"></script>
+<polymer-element name="core-toolbar" noscript="">
 <template>
 
-  <style>/*
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-:host {
-  /* technical */
-  display: block;
-  position: relative;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  /* size */
-  height: 64px;
-  /* typography */
-  font-size: 1.3em;
-  /* background */
-  background-color: #CFD8DC;
-}
-
-:host(.animate) {
-  /* transition */
-  transition: height 0.18s ease-in;
-}
-
-:host(.medium-tall) {
-  height: 128px;
-}
-
-:host(.tall) {
-  height: 192px;
-}
-
-.toolbar-tools {
-  height: 64px;
-  padding: 0 8px;
-  pointer-events: none;
-}
-
-/* narrow layout */
-:host(.narrow) {
-  height: 56px;
-}
-
-:host(.narrow.medium-tall) {
-  height: 112px;
-}
-
-:host(.narrow.tall) {
-  height: 168px;
-}
-
-:host(.narrow) .toolbar-tools {
-  height: 56px;
-  padding: 0;
-}
-
-/* middle bar */
-#middleBar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-:host(.tall, .medium-tall) #middleBar {
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-/* bottom bar */
-#bottomBar {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-/* shows bottom bar only when in normal height (!tall && !medium-tall) */
-:host(.animate.no-overlap) > #topBar, 
-:host(.animate.no-overlap) > #middleBar {
-  transition: -webkit-transform 0.18s ease-in;
-  transition: transform 0.18s ease-in;
-}
-
-:host(.no-overlap:not(.medium-tall):not(.tall)) > #topBar {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-:host(.no-overlap:not(.medium-tall):not(.tall)) > #middleBar {
-  -webkit-transform: translateY(-200%);
-  transform: translateY(-200%);
-}
-
-/* make elements (e.g. buttons) respond to mouse/touch events */
-polyfill-next-selector { content: '.toolbar-tools > *'; }
-::content > * {
-  pointer-events: auto;
-}
-
-/* elements spacing */
-polyfill-next-selector { content: '.toolbar-tools > *'; }
-::content > * {
-  margin: 0px 8px;
-}
-
-/* misc helpers */
-polyfill-next-selector { content: '.toolbar-tools > .fit'; }
-::content > .fit {
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  margin: 0;
-}
-
-polyfill-next-selector { content: ':host .indent'; }
-::content > .indent {
-  margin-left: 60px;
-}
-</style>
+  <link rel="stylesheet" href="components/core-toolbar/core-toolbar.css">
 
   <div id="bottomBar" class="toolbar-tools" center="" horizontal="" layout="">
     <content select=".bottom"></content>
@@ -504,9 +296,8 @@ polyfill-next-selector { content: ':host .indent'; }
   </div>
 
 </template>
-<script>Polymer('core-toolbar');</script></polymer-element>
-
-<polymer-element name="core-meta" attributes="list label type" hidden="" assetpath="components/core-meta/">
+</polymer-element>
+<polymer-element name="core-meta" attributes="list label type" hidden="">
 <script>
 
   (function() {
@@ -592,7 +383,7 @@ polyfill-next-selector { content: ':host .indent'; }
   
 </script>
 </polymer-element>
-<polymer-element name="core-iconset" extends="core-meta" attributes="src width icons iconSize" assetpath="components/core-iconset/">
+<polymer-element name="core-iconset" extends="core-meta" attributes="src width icons iconSize">
   
   <script>
   
@@ -766,7 +557,9 @@ polyfill-next-selector { content: ':host .indent'; }
   </script>
 
 </polymer-element>
-<polymer-element name="core-icon" attributes="src size icon" assetpath="components/core-icon/">
+<link rel="stylesheet" href="components/core-icon/core-icon.css" shim-shadowdom="">
+
+<polymer-element name="core-icon" attributes="src size icon">
 <script>
 (function() {
   
@@ -850,8 +643,7 @@ polyfill-next-selector { content: ':host .indent'; }
 </script>
 
 </polymer-element>
-
-<polymer-element name="paper-focusable" attributes="active focused disabled isToggle" tabindex="0" on-down="{{_downAction}}" on-up="{{_upAction}}" on-focus="{{focusAction}}" on-blur="{{blurAction}}" assetpath="components/paper-focusable/">
+<polymer-element name="paper-focusable" attributes="active focused disabled isToggle" tabindex="0" on-down="{{_downAction}}" on-up="{{_upAction}}" on-focus="{{focusAction}}" on-blur="{{blurAction}}">
 
   <script>
     Polymer('paper-focusable', {
@@ -967,8 +759,7 @@ polyfill-next-selector { content: ':host .indent'; }
 
   </script>
 </polymer-element>
-
-<polymer-element name="paper-ripple" attributes="initialOpacity opacityDecayVelocity" assetpath="components/paper-ripple/">
+<polymer-element name="paper-ripple" attributes="initialOpacity opacityDecayVelocity">
 <template>
 
   <style>
@@ -1345,92 +1136,11 @@ polyfill-next-selector { content: ':host .indent'; }
 
 </script>
 </polymer-element>
-
-<polymer-element name="paper-shadow" assetpath="components/paper-shadow/">
+<polymer-element name="paper-shadow">
 
   <template>
 
-    <style no-shim="">.paper-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: inherit;
-  pointer-events: none;
-}
-
-.paper-shadow-animated.paper-shadow {
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.paper-shadow-top-z-1 {
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-}
-
-.paper-shadow-bottom-z-1 {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
-.paper-shadow-top-z-2 {
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.paper-shadow-bottom-z-2 {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-}
-
-.paper-shadow-top-z-3 {
-  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.paper-shadow-bottom-z-3 {
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-}
-
-.paper-shadow-top-z-4 {
-  box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21);
-}
-
-.paper-shadow-bottom-z-4 {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22);
-}
-
-.paper-shadow-top-z-5 {
-  box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22);
-}
-
-.paper-shadow-bottom-z-5 {
-  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2);
-}
-
-.paper-shadow-animate-z-1-z-2.paper-shadow-top {
-  -webkit-transition: none;
-  -webkit-animation: animate-shadow-top-z-1-z-2 0.7s infinite alternate;
-}
-
-.paper-shadow-animate-z-1-z-2 .paper-shadow-bottom {
-  -webkit-transition: none;
-  -webkit-animation: animate-shadow-bottom-z-1-z-2 0.7s infinite alternate;
-}
-
-@-webkit-keyframes animate-shadow-top-z-1-z-2 {
-  0% {
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  }
-  100% {
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-}
-
-@-webkit-keyframes animate-shadow-bottom-z-1-z-2 {
-  0% {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  }
-  100% {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-  }
-}</style>
+    <link no-shim="" href="components/paper-shadow/paper-shadow.css" rel="stylesheet">
 
   </template>
 
@@ -1584,125 +1294,11 @@ polyfill-next-selector { content: ':host .indent'; }
     });
   </script>
 </polymer-element>
-<polymer-element name="paper-button" extends="paper-focusable" attributes="label raisedButton iconSrc icon" role="button" assetpath="components/paper-button/">
+<polymer-element name="paper-button" extends="paper-focusable" attributes="label raisedButton iconSrc icon" role="button">
 
   <template>
 
-    <style>:host {
-  display: inline-block;
-  position: relative;
-  border: 0;
-  background: transparent;
-  text-align: center;
-  font: inherit;
-  text-transform: uppercase;
-  outline: none;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-
-:host(.hover:hover) {
-  background: #e4e4e4;
-}
-
-:host([raisedButton]) {
-  background: #dfdfdf;
-}
-
-:host([raisedButton].hover:hover) {
-  background: #d6d6d6;
-}
-
-:host([disabled]) {
-  background: #eaeaea !important;
-  color: #a8a8a8 !important;
-  cursor: auto;
-}
-
-#shadow-container {
-  border-radius: inherit;
-}
-
-#clip {
-  position: relative;
-  border-radius: inherit;
-  overflow: hidden;
-}
-
-/*
-#focusBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  border-radius: inherit;
-  background: #c3c3c3;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-:host([focused]) #focusBg {
-  -webkit-transition: none;
-  transition: none;
-  -webkit-animation: focus-fade 0.7s infinite alternate;
-  animation: focus-fade 0.7s infinite alternate;
-}
-
-@-webkit-keyframes focus-fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes focus-fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-*/
-
-#ripple {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: #d1d1d1;
-  pointer-events: none;
-}
-
-:host([raisedButton]) #ripple {
-  color: #cecece;
-}
-
-#ripple::shadow canvas {
-  top: 0;
-  left: 0;
-}
-
-#content {
-  /* needed to position the ink behind the content */
-  position: relative;
-}
-
-#icon {
-  margin: 8px;
-}
-
-#content > span {
-  display: inline-block;
-  margin: 0.5em;
-}</style>
+    <link href="components/paper-button/paper-button.css" rel="stylesheet">
 
     <template if="{{raisedButton}}">
       <div fit="" id="shadow-container">
@@ -1711,7 +1307,6 @@ polyfill-next-selector { content: ':host .indent'; }
     </template>
 
     <div id="clip">
-      <!-- <div id="focusBg"></div> -->
       <paper-ripple id="ripple"></paper-ripple>
       <div id="content">
         <template if="{{iconSrc || icon}}">
@@ -1853,27 +1448,11 @@ polyfill-next-selector { content: ':host .indent'; }
     });
   </script>
 </polymer-element>
-<polymer-element name="paper-icon-button" extends="paper-button" attributes="fill" assetpath="components/paper-icon-button/">
+<polymer-element name="paper-icon-button" extends="paper-button" attributes="fill">
 
   <template>
 
-    <style>/*
-Copyright 2013 The Polymer Authors. All rights reserved.
-Use of this source code is governed by a BSD-style
-license that can be found in the LICENSE file.
-*/
-
-:host([disabled]) {
-  background: none !important;
-}
-
-:host([disabled]) /deep/ #icon {
-  fill: #c9c9c9;
-}
-
-:host(:not([fill])) /deep/ #focusBg {
-  border-radius: 50%;
-}</style>
+    <link href="components/paper-icon-button/paper-icon-button.css" rel="stylesheet">
 
     <shadow></shadow>
 
@@ -1916,8 +1495,7 @@ license that can be found in the LICENSE file.
   </script>
   
 </polymer-element>
-
-<polymer-element name="core-iconset-svg" extends="core-meta" attributes="iconSize" assetpath="components/core-iconset-svg/">
+<polymer-element name="core-iconset-svg" extends="core-meta" attributes="iconSize">
 
   <script>
 
@@ -2218,81 +1796,11 @@ license that can be found in the LICENSE file.
 <g id="work"><path d="M20,6h-4V4l-2-2h-4L8,4v2H4C2.9,6,2,6.9,2,8l0,11c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V8C22,6.9,21.1,6,20,6z M14,6h-4V4h4V6z"></path></g>
 </defs></svg>
 </core-iconset-svg>
-<polymer-element name="core-icon-button" attributes="src icon active" assetpath="components/core-icon-button/">
+<polymer-element name="core-icon-button" attributes="src icon active">
 
   <template>
 
-    <style>/*
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE
-The complete set of authors may be found at http://polymer.github.io/AUTHORS
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS
-*/
-
-:host {
-  display: inline-block;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  width: 38px;
-  height: 38px;
-  background-image: none;
-  border-radius: 2px;
-  padding: 7px;
-  margin: 2px;
-  vertical-align: middle;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-:host([disabled]) {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-:host(.outline) {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-:host(:hover:not([disabled])) {
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-:host(.selected:not([disabled])) {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.12);
-}
-
-:host(:active:not([disabled]), .selected:active:not([disabled])) {
-  background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.12);
-}
-
-:host(.core-dark-theme.outline) {
-  background-color: rgba(200, 200, 200, 0.05);
-  box-shadow: 0 0 0 1px rgba(200, 200, 200, 0.1);
-}
-
-:host(.core-dark-theme:hover) {
-  background-color: rgba(200, 200, 200, 0.05);
-  box-shadow: 0 1px 0 0 rgba(200, 200, 200, 0.12), 0 0 0 1px rgba(200, 200, 200, 0.1);
-}
-
-:host(.core-dark-theme.selected) {
-  background-color: rgba(220, 220, 220, 0.05);
-  box-shadow: inset 0 1px 0 0 rgba(200, 200, 200, 0.05), 0 0 0 1px rgba(200, 200, 200, 0.12);
-}
-
-:host(.core-dark-theme:active, .core-dark-theme.selected:active) {
-  background-color: rgba(200, 200, 200, 0.05);
-  box-shadow: inset 0 1px 0 0 rgba(200, 200, 200, 0.1), 0 0 0 1px rgba(200, 200, 200, 0.12);
-}
-
-core-icon {
-  pointer-events: none;
-}
-</style>
+    <link rel="stylesheet" href="components/core-icon-button/core-icon-button.css">
 
     <core-icon src="{{src}}" icon="{{icon}}"><content></content></core-icon>
 
@@ -2342,67 +1850,10 @@ core-icon {
   </script>
 
 </polymer-element>
-
-<polymer-element name="core-scroll-header-panel" assetpath="components/core-scroll-header-panel/">
+<polymer-element name="core-scroll-header-panel">
 <template>
 
-  <style>/*
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-:host {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#mainContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-#headerContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-.bg-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#headerBg, #condensedHeaderBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-#condensedHeaderBg {
-  opacity: 0;
-}</style>
+  <link rel="stylesheet" href="components/core-scroll-header-panel/core-scroll-header-panel.css">
 
   <div id="mainContainer" on-scroll="{{scroll}}">
   
@@ -2626,8 +2077,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 </script>
 </polymer-element>
-
-<polymer-element name="core-media-query" attributes="query queryMatches" assetpath="components/core-media-query/">
+<polymer-element name="core-media-query" attributes="query queryMatches">
   <template>
     <style>
       :host {
@@ -2678,8 +2128,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     });
   </script>
 </polymer-element>
-
-<polymer-element name="open-new-window" attributes="href label" assetpath="components/open-new-window/">
+<polymer-element name="open-new-window" attributes="href label">
   <template>
     <style>
     a {
@@ -2697,24 +2146,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   </template>
   <script>
-    Polymer('open-new-window',{
+    Polymer({
     });
   </script>
 </polymer-element>
-</div>
+<link rel="stylesheet" href="css/header.css" shim-shadowdom=""><link rel="stylesheet" href="css/base.css"></div>
   <core-scroll-header-panel flex="" condenses="">
-    <!-- header -->
     <core-toolbar>
       <div id="logo" class="bottom">
       </div>
       <span flex=""></span>
       <ul>
-        <li><a href="meetups.html">Meetup Log</a></li>
-        <li><a href="https://groups.google.com/forum/#!forum/gtug-girls" target="new">Google Group<core-icon icon="launch"></core-icon></a></li>
+        <li><a href="https://gtuggirls.connpass.com/" target="_blank">Meetup Log<core-icon icon="launch"></core-icon></a></li>
+        <li><a href="https://groups.google.com/forum/#!forum/gtug-girls" target="_blank">Google Group<core-icon icon="launch"></core-icon></a></li>
       </ul>
     </core-toolbar>
 
-    <!-- contents -->
     <div content="" layout="" vertical="" center="" id="content">
       <div id="main_container">
         <h1>Welcome to GTUG Girls</h1>
@@ -2734,38 +2181,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </ul>
             １つでもあてはまったあなたは GTUG Girl!<br>
             ガールズパワーでテクノロジーを乗りこなし、いままでにない何かを一緒につくろう！<br><br>
-            GTUG Girls への参加をご希望の方は、こちらのメーリングリストにご登録ください。<br>
+            GTUG Girls への参加をご希望の方は、こちらの Connpass グループにご参加ください。<br>
             ＊女性のみです<br>
-            <a href="https://groups.google.com/forum/#!forum/gtug-girls" target="new">Google Group : GTUG Girls<core-icon icon="launch"></core-icon></a>
+            <a href="https://gtuggirls.connpass.com/" target="_blank">Connpass Group : GTUG Girls<core-icon icon="launch"></core-icon></a>
         </div>
 
         <div class="item_container">
           <h3>次回のMeetup</h3>
           <div>
-            次回のミートアップは『初めてのUnity！』です！<br>
-            <a href="http://gdg-tokyo.connpass.com/event/38927/" target="_blank">DevFest Tokyo 2016</a> の前日で、かつ三連休の初日に GTUG Girls は渋谷でUnityのハンズオンをしますよ。この機会に開発漬けの連休にしてみてはいかがでしょうか？<br>
-            <h4>第30回 GTUG Girls Meetup 「初めてのUnity！」</h4>
-            <ul>
-              <li>内容：Unity</li>
-              <li>開催日：2016年10月8日（土）13:00〜17:00（受付12:30〜）</li>
-              <li>講師：<a href="https://twitter.com/megane711" target="_blank">さわい</a> さん</li>
-              <li>チューター：<a href="https://twitter.com/upft_rkoshida" target="_blank">こしだ</a> さん、<a href="https://twitter.com/y_k_one" target="_blank">さかぐち</a> さん、<a href="https://twitter.com/nagaoyuriko" target="_blank">ながお</a> さん</li>
-              <li>会場：株式会社ディー・エヌ・エー 【DeNA】<br>東京都渋谷区渋谷2-21-1 渋谷ヒカリエ21F<br><a href="http://dena.com/company/access.html" target="_blank">http://dena.com/company/access.html</a></li>
-              <li>詳細・お申し込み：<a href="http://gtuggirls.connpass.com/event/39191/" target="_blank">http://gtuggirls.connpass.com/event/39191/</a></li>
-            </ul>
+            最新の Meetup は <a href="https://gtuggirls.connpass.com/" target="_blank">Connpass のページ</a> からご確認、ご参加よろしくお願いします！<br>
           </div>
         </div>
 
         <div class="item_container">
           <h3>最近のMeetup</h3>
           <div>
-            8月17日（水）に29回目のMeetup 「プログレッシブウェブアプリの作り方」を開催しました。
+            6月19日（土）に56回目のMeetup 「GTUGGirls Java女子部さんと合同企画 ！KotlinとJava基本のき！」を開催しました。
             <ul>
-              <li><a href="http://gtuggirls.connpass.com/event/36428/" target="_blank">第29回 GTUG Girls Meetup 「プログレッシブウェブアプリの作り方」 - connpass</a></li>
+              <li><a href="https://gtuggirls.connpass.com/event/214383/" target="_blank">第56回 GTUGGirls Java女子部さんと合同企画 ！KotlinとJava基本のき！</a></li>
             </ul>
 
             <br>
-            <a href="meetups.html">過去のMeetup一覧</a>
+            <a href="https://gtuggirls.connpass.com/event/" target="_blank">過去のMeetup一覧</a>
           </div>
         </div>
 
@@ -2773,26 +2210,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <h3>Staff募集</h3>
           <div>
             GTUG Girls の運営を手伝っていただけるスタッフを募集しています。<br>
-            <a href="mailto:gtug-girls-staff@googlegroups.com">gtug-girls-staff@googlegroups.com</a> までメールいただくか、イベントでスタッフにお問い合わせください。
+            <a href="https://twitter.com/GTUGGirls">@GTUGGirls</a> へダイレクトメッセージをいただくか、イベントでスタッフにお問い合わせください。
           </div>
         </div>
 
         <div layout="" horizontal="">
           <div class="item_container" flex="">
             <h3>Twitter : @GTUGGirls</h3>
-            <a class="twitter-timeline" href="https://twitter.com/GTUGGirls" data-widget-id="495013417699135488" width="400">@GTUGGirls からのツイート</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <a class="twitter-timeline" href="https://twitter.com/GTUGGirls?ref_src=twsrc%5Etfw">Tweets by GTUGGirls</a> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
           <div class="item_container" flex="">
             <h3>#gtuggirls</h3>
-            <a class="twitter-timeline" href="https://twitter.com/hashtag/gtuggirls" data-widget-id="495037989890711552" width="400">#gtuggirls件のツイート</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=gtuggirls&amp;ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #gtuggirls</a><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
-      </div>  <!-- end of main_container -->
-    </div>  <!-- end of contents -->
-
-  </core-scroll-header-panel>
+      </div>  </div>  </core-scroll-header-panel>
 
   <core-media-query query="max-width:500px" querymatches="{{qMatches}}"></core-media-query>
   <script src="js/header.js"></script>
