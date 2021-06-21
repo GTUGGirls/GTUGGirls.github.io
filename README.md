@@ -7,10 +7,10 @@
 * index_raw.html
 * meetups_raw.html
 
-これらを編集したら、vulcanize (https://github.com/polymer/vulcanize) をかけてください。
+これらを編集したら、polymer-bundler (https://github.com/Polymer/tools/tree/master/packages/bundler) をかけてください。
 
 ```
-$ vulcanize -o index.html index_raw.html
-$ vulcanize -o meetups.html meetups_raw.html
+$ polymer-bundler --strip-comments index_raw.html --rewrite-urls-in-templates > index.html
+$ polymer-bundler --strip-comments meetups_raw.html --rewrite-urls-in-templates > meetups.html
 ```
 
